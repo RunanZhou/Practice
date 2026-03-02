@@ -1,0 +1,31 @@
+import datetime
+year_now = datetime.datetime.now().year
+def born_year():
+    age = float (input("how old r u?"))
+    year_born = float(year_now - age)
+    return year_born
+year = born_year()%12
+if year == 10:
+   print(" ur animal is hourse🐎")
+elif year == 11:
+   print(" ur animal is sheep🐏")
+elif year == 0:
+   print(" ur animal is monkey🐒")
+elif year == 1:
+   print(" ur animal is chicken🐓")
+elif year == 2:
+   print(" ur animal is dog🐕")
+elif year == 3:
+   print(" ur animal is pig🐖")
+elif year == 4:
+   print(" ur animal is rat🐀")
+elif year == 5:
+   print(" ur animal is cow🐂")
+elif year == 6:
+   print(" ur animal is tiger🐅")
+elif year == 7:
+   print(" ur animal is rabbit🐇")
+elif year == 8:
+   print(" ur animal is dragon🐉")
+else:
+   print(" ur animal is snake🐍")
