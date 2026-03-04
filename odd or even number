@@ -1,0 +1,19 @@
+def is_num_even(num):
+    if num % 2 == 0:
+        return True
+    else:
+        return False
+    
+num = input("give me a number.(or press q to exit)")
+
+while num != "q":
+    if num.isdigit() :
+        num = int(num)
+        if is_num_even(num):
+         print("it's even")
+        else:
+         print("it's odd")
+    else:
+     print("please write number")
+    num = input("give me a number.(or press q to exit)")
+print("thank you for using!")
