@@ -1,0 +1,25 @@
+car_started = False
+while True:
+    word = input(">").lower()
+    if word == 'help':
+        print('''
+start - to start the car
+stop - to stop the car
+quit - to exit
+              ''')
+    elif word =="start":
+        if car_started == False:
+            print("Car started...Ready to go!")
+            car_started = True
+        else:
+            print("car is already started.")
+    elif word =="stop":
+        if car_started:
+            print("Car stopped.")
+            car_started = False
+        else:
+            print("car is already stopped")
+    elif word == "quit":
+        break
+    else:
+        print("I don't understand...")
